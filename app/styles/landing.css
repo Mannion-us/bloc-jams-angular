@@ -38,16 +38,17 @@
      position: relative;
      padding: 2rem;
      text-align: center;
-     opacity: 0;
+     opacity: 1;    /*<!-- elimination of refactored animation -->*/
      -webkit-transform: scaleX(0.9) translateY(3rem);
      -moz-transform: scaleX(0.9) translateY(3rem);
      transform: scaleX(0.9) translateY(3rem);
-     -webkit-transition: all .25s ease-in-out;
+/*     -webkit-transition: all .25s ease-in-out;
      -moz-transition: all .25s ease-in-out;
-     transition: all .25s ease-in-out;
+     transition: all .25s ease-in-out;    <!-- elimination of refactored animation -->
      -webkit-transition-delay: .2s;
      -moz-transition-delay: .2s;
      transition-delay: 0.2s;
+*/
  }
  
  .point .point-title {
