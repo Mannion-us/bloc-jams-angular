@@ -5,7 +5,7 @@
 
 		$locationProvider	//<!--	Configure paths  -->//
 			.html5Mode({
-				enabled: false,	//<!--  Toggle this to hid URLs paths  -->//	//<!--  Do not toggle or will error in console  -->//
+				enabled: true,	//<!--  Toggle this to hid URLs paths  -->//	//<!--  Do not toggle or will error in console  -->//
 				requireBase: false
 			});
 
@@ -13,6 +13,10 @@
 			.state('landing', {
 				url: '/',
 				templateUrl: '/templates/landing.html'
+			})
+			.state('album', {
+				url: '/album',
+				templateUrl: '/templates/album.html'
 			});
 
 	}
