@@ -5,7 +5,7 @@
 
 		$locationProvider	//<!--	Configure paths  -->//
 			.html5Mode({
-				enabled: true,	//<!--  Toggle this to hid URLs paths  -->//	//<!--  Do not toggle or will error in console  -->//
+				enabled: false,	//<!--  Toggle this to hid URLs paths  -->//	//<!--  Do not toggle or will error in console  -->//
 				requireBase: false
 			});
 
