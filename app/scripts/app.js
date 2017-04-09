@@ -14,9 +14,9 @@
 				url: '/',
 				templateUrl: '/templates/landing.html'
 			})
-			.state('album', {
-				url: '/album',
-				templateUrl: '/templates/album.html'
+			.state('album', {	//<!--  Navigating using 'ui-view' directives required changing the URL in the browser in order  -->//
+				url: '/album',	//<!--  to actually see this effect before making changes to 'href' tags to 'ui-sref' poorly     -->//
+				templateUrl: '/templates/album.html'	//<!--   written curriculum content.  -->//
 			});
 
 	}
