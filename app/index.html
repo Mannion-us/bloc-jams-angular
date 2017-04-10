@@ -15,11 +15,11 @@
 </head>
 <body>
     <nav class="navbar"><!-- navigation bar-->
-        <a href="index.html" class="logo">
+        <ui-sref="index" class="logo">  <!--  BUG FOUND:  Trigger a State Fails to produce 'view'  -->
             <img src="assets/images/bloc_jams_logo.png" alt="bloc jams logo">
         </a>
         <div class="links-container">
-            <a href="collection.html" class="navbar-link">collection</a>
+            <ui-sref="collection" class="navbar-link">collection</a>  <!--  BUG FOUND:  Trigger a State Fails to produce 'view'  -->
         </div>
     </nav>
     <ui-view></ui-view>
