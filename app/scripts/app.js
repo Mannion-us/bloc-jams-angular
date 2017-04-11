@@ -18,7 +18,8 @@
 				url: '/album',	//<!--  to actually see this effect before making changes to 'href' tags to 'ui-sref' poorly     -->//
 				templateUrl: '/templates/album.html'	//<!--   written curriculum content.  -->//
 			});
-
+	//<!--  Without response regarding console log error messages I am preparing to enter the following commit message and move on:  -->//
+	//<!--  ' git commit -m "angular-checkpoint-3-Routing-and-States:  completed" '
 	}
 
 	angular
