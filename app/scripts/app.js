@@ -1,4 +1,4 @@
-<!--	Providers are services used by Angular modules to either configure or define default behavior for a certain Angular module.  -->
+//<!--	Providers are services used by Angular modules to either configure or define default behavior for a certain Angular module.  -->
 (function() {
 
 	function config($stateProvider, $locationProvider) {
@@ -20,7 +20,7 @@
 			})
 		$stateProvider
 			.state('collection', {
-				url: '/',
+				url: '/collection',
 				templateUrl: '/templates/collection.html'
 			});
 	}
