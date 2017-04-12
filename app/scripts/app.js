@@ -17,8 +17,12 @@
 			.state('album', {	//<!--  Navigating using 'ui-view' directives required changing the URL in the browser in order  -->//
 				url: '/album',	//<!--  to actually see this effect before making changes to 'href' tags to 'ui-sref' poorly     -->//
 				templateUrl: '/templates/album.html'	//<!--   written curriculum content.  -->//
+			})
+		$stateProvider
+			.state('collection', {
+				url: '/collection',
+				templateUrl: '/templates/collection.html'
 			});
-
 	}
 
 	angular
