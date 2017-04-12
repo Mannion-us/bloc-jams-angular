@@ -29,3 +29,4 @@
 		.module('blocJams', ['ui.router'])
 		.config(config);
 	})();
+//<!--	This note marks the success of all the 'fixes' for both branches 'checkpoint' and 'assignment'...next commit will complete.  -->
