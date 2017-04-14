@@ -1,0 +1,98 @@
+angular-assignment-4-Templates.txt
+
+
+
+Player-Bar-Play-Pause-Button-declarative-code-conditions:
+----------------------------------------------------------
+
+What button:		What action takes place:		What conditions exist ( true or false ):		ng-Syntax conditions involved:
+-------------		-------------------------		-----------------------------------------		-------------------------------
+
+Play button 		hover on / hover off 			song not playing = true / false 				ngMouseover / ngMouseleave / ngShow / ngHide
+
+Play button 		clicked							song not playing = true / false					ngClick / ngShow / ngHide
+
+Pause button 		hover on / hover off			song not playing = true	/false					ngMouseover / ngMouseleave / ngShow / ngHide
+
+Pause button 		clicked							song not playing = true	/false					ngClick / ngShow / ngHide
+
+
+Other conditions / considerations that take place or result from ( "album-song-button" ):
+------------------------------------------------------------------------------------------
+
+Button:			Cause:			Effect:								Resulting ng-Syntax conditions involved:
+-------			------			-------								-----------------------------------------
+
+Play 			hover on		song-item-number state change		ngMouseover / ngMouseleave / ngShow / ngHide
+
+Play 			clicked			song-item-number state change 		ngClick / ngShow / ngHide
+
+Pause 			hover on 		song-item-number state change 		ngMouseover / ngMouseleave / ngShow / ngHide
+
+Pause 			clicked 		song-item-number state change 		ngClick / ngShow / ngHide
+
+
+
+   Play button
+   -----------
+play    or    !play
+  | \           |
+  |  \          |
+  |   \         |
+  |    \        |
+!paused \       |
+  |      \      |
+  |       \     |
+ngShow     \    |
+  |         \   |
+  |          \  |
+"ion-pause"   \ |
+               \|
+                \
+              ngShow
+                |
+                |
+            "ion-play"
+
+
+
+   Pause button
+   ------------
+play    or    !play
+  | \           |
+  |  \          |
+  |   \         |
+  |    \        |
+!paused \       |
+  |      \      |
+  |       \     |
+ngShow     \    |
+  |         \   |
+  |          \  |
+"ion-pause"   \ |
+               \|
+                \
+              ngShow
+                |
+                |
+            "ion-play"
+
+
+
+what 		when 		how 			ng-Syntax conditions:
+-----		-----		----			----------------------
+
+play 		!play 		ngShow 			"album-song-button" ngShow "ion-play"
+
+play 		play 		ngShow 			"album-song-button" ngShow "ion-pause"
+
+play 		hoveron 	ngMouseover 	"album-song-button" ngShow "ion-pause" if play
+
+play 		hoveroff 	ngMouseleave 	"album-song-button" ngShow "ion-play" if !play
+
+play 		hoveroff 	ngMouseleave 	"album-song-button" ngShow "ion-pause" if play
+
+play 		hoveroff 	ngMouseleave 	"album-song-button" ngShow "ion-pause" if pause
+
+play 		hoveroff 	ngMouseleave 	"album-song-button" ngShow "song-item-number" if !play
+
