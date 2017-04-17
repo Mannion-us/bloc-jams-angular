@@ -1,14 +1,14 @@
  <section class="album-covers container clearfix">
-     <div class="collection-album-container column fourth">
+     <div class="collection-album-container column fourth" ng-repeat="album in collection.albums">
          <img src="/assets/images/album_covers/01.png"/>
          <div class="collection-album-info caption">
              <p>
                  <ui-sref="album" class="album-name" >The Colors</a>
                  <br/>
-                 <ui-sref="album" >Pablo Picasso</a>    <!--Not certain that-->
-                 <br/>  <!--'album' can be used repeatedly except that 'class'-->
-                 X songs  <!--designates it as different.-->
-                 <br/>  <!--Will have to ask mentor about this one...-->
+                 <ui-sref="album" >Pablo Picasso</a>
+                 <br/>
+                 X songs
+                 <br/>
              </p>
          </div>
      </div>
