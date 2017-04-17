@@ -12,6 +12,7 @@
 		$stateProvider
 			.state('landing', {
 				url: '/',
+				controller: 'LandingCtrl as landing', 
 				templateUrl: '/templates/landing.html'
 			})
 			.state('album', {	//<!--  Navigating using 'ui-view' directives required changing the URL in the browser in order  -->//
