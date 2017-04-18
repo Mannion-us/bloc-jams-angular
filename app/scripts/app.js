@@ -5,7 +5,7 @@
 
 		$locationProvider	//<!--	Configure paths  -->//
 			.html5Mode({
-				enabled: true,	//<!--  Toggle this to hid URLs paths  -->//	//<!--  Do not toggle or will error in console  -->//
+				enabled: true,
 				requireBase: false
 			});
 
@@ -15,9 +15,11 @@
 				controller: 'LandingCtrl as landing', 
 				templateUrl: '/templates/landing.html'
 			})
-			.state('album', {	//<!--  Navigating using 'ui-view' directives required changing the URL in the browser in order  -->//
-				url: '/album',	//<!--  to actually see this effect before making changes to 'href' tags to 'ui-sref' poorly     -->//
-				templateUrl: '/templates/album.html'	//<!--   written curriculum content.  -->//
+		$stateProvider
+			.state('album', {
+				url: '/album',
+				controller: 'AlbumCtrl as album',
+				templateUrl: '/templates/album.html'
 			})
 		$stateProvider
 			.state('collection', {
