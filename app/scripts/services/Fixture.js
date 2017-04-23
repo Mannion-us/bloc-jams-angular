@@ -84,6 +84,10 @@
 			]
 		};
 
+			Fixtures.getAlbum = function() {
+				return albumPicasso;
+			};
+
 		return Fixtures;
 	}
 
