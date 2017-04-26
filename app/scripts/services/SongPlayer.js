@@ -5,6 +5,20 @@
 		var currentSong = null;
 		var currentBuzzObject = null;
 
+		var setSong = function(song) {
+			if (currentBuzzObject) {
+				currentBuzzObject.stop();
+				currentBuzzObject.playing = null;
+			}
+
+			currentBuzzObject = new buzz.sound(song.audioUrl,{
+				formats: ['mp3'],
+				preload: true
+			});
+
+			currentSong = song;
+		};
+
 		SongPlayer.play = function(song) {
 
 			if (currentSong !== song) {
