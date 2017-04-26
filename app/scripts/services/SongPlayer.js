@@ -10,6 +10,7 @@
 			if (currentSong !== song) {
 				if (currentBuzzObject) {
 					currentBuzzObject.stop();
+					currentSong.playing = null;
 				}
 
 			else if (currentSong === song) {
@@ -25,6 +26,7 @@
 
 			currentSong = song;
 			currentBuzzObject.play();
+			song.playing = true;
 
 			}
 		};
