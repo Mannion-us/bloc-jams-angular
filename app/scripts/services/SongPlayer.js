@@ -46,3 +46,4 @@
 		.module('blocJams')
 		.factory('SongPlayer', SongPlayer);
 })();
+//<!--  git commit -m "angular-checkpoint-7-Services-Part-2:  completed"  -->
