@@ -75,4 +75,4 @@
 		.module('blocJams')
 		.factory('SongPlayer', SongPlayer);
 })();
-//git commit -m "angular-assignment-7-Services-Part-2:  completed..."
+//git checkout -b angular-checkpoint-8-Services-Part-3
