@@ -7,11 +7,6 @@
 */
 		var SongPlayer = {};
 /**
-* @desc (Public) Public name for 'current song' designated object
-* @type {Object}
-*/
-		SongPlayer.currentSong = null;
-/**
 * @desc (Private) Buzz object audio file
 * @type {Object}
 */
@@ -41,6 +36,11 @@
 			currentBuzzObject.play();
 			song.playing = true;
 		};
+/**
+* @desc (Public) Public name for 'current song' designated object
+* @type {Object}
+*/
+		SongPlayer.currentSong = null;
 /**
 * @function (Public) play
 * @desc Plays a 'song' (new or current)
