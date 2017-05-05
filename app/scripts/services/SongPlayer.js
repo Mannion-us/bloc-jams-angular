@@ -7,10 +7,10 @@
 */
 		var SongPlayer = {};
 /**
-* @desc (Private) Private name for 'current song' designated object
+* @desc (Public) Public name for 'current song' designated object
 * @type {Object}
 */
-		var currentSong = null;
+		SongPlayer.currentSong = null;
 /**
 * @desc (Private) Buzz object audio file
 * @type {Object}
