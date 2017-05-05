@@ -75,4 +75,3 @@
 		.module('blocJams')
 		.factory('SongPlayer', SongPlayer);
 })();
-//git checkout -b angular-checkpoint-8-Services-Part-3
