@@ -82,6 +82,14 @@ var getSongIndex = function(song) {
 			currentBuzzObject.pause();
 			song.playing = false;
 		};
+/**
+* @function (Public) previous
+* @desc Set 'song' to previous 'song' in album
+*/
+		SongPlayer.previous = function() {
+			var currentSongIndex = getSongIndex(SongPlayer.currentSong);
+			currentSongIndex--;
+		};
 		return SongPlayer;
 	}
 
