@@ -42,6 +42,15 @@
 			song.playing = true;
 		};
 /**
+* @function (Private) getSongIndex
+* @desc Get index of song in the songs array
+* @param {Object} song
+* @returns {Number}
+*/
+var getSongIndex = function(song) {
+	return currentAlbum.songs.indexOf(song);
+};
+/**
 * @desc (Public) Public name for 'current song' designated object
 * @type {Object}
 */
