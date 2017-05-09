@@ -1,11 +1,16 @@
 (function() {
-	function SongPlayer() {
+	function SongPlayer(Fixtures) {
 
 /**
 * @desc (Public) Public name for SongPlayer object
 * @type {Object}
 */
 		var SongPlayer = {};
+/**
+* @desc (Private) Information for current album
+* @type {Object}
+*/
+		var currentAlbum = Fixtures.getAlbum();
 /**
 * @desc (Private) Buzz object audio file
 * @type {Object}
@@ -75,5 +80,5 @@
 
 	angular
 		.module('blocJams')
-		.factory('SongPlayer', SongPlayer);
+		.factory('SongPlayer', ['Fixtures', SongPlayer]);
 })();
