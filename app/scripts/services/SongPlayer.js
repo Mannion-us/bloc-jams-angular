@@ -47,9 +47,18 @@
 * @param {Object} song
 * @returns {Number}
 */
-var getSongIndex = function(song) {
-	return currentAlbum.songs.indexOf(song);
-};
+		var getSongIndex = function(song) {
+			return currentAlbum.songs.indexOf(song);
+		};
+/**
+* @function (Private) stopSong
+* @desc Stop a song
+* @param {Object} song
+*/
+		var stopSong = function(song) {
+			currentBuzzObject.stop();
+			song.playing = null;
+		};
 /**
 * @desc (Public) Public name for 'current song' designated object
 * @type {Object}
