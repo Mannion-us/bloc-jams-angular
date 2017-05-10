@@ -99,6 +99,14 @@ var getSongIndex = function(song) {
 				playSong(song);
 			}
 		};
+/**
+* @function (Public) next
+* @desc Set 'song' to next 'song' in album
+*/
+		SongPlayer.next = function() {
+			var currentSongIndex = getSongIndex(SongPlayer.currentSong);
+			currentSongIndex++;
+		};
 		return SongPlayer;
 	}
 
