@@ -23,8 +23,7 @@
 */
 		var setSong = function(song) {
 			if (currentBuzzObject) {
-				currentBuzzObject.stop();
-				SongPlayer.currentSong.playing = null;
+				stopSong(SongPlayer.currentSong);
 			}
 			currentBuzzObject = new buzz.sound(song.audioUrl,{
 				formats: ['mp3'],
@@ -99,8 +98,7 @@
 			var currentSongIndex = getSongIndex(SongPlayer.currentSong);
 			currentSongIndex--;
 			if (currentSongIndex < 0) {
-				currentBuzzObject.stop();
-				SongPlayer.currentSong.playing = null;
+				stopSong(SongPlayer.currentSong);
 			}
 			else {
 				var song = currentAlbum.songs[currentSongIndex];
