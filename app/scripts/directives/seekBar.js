@@ -3,7 +3,10 @@
 		return {
 			templateUrl: '/templates/directives/seek_bar.html',
 			replace: true,
-			restrict: 'E'
+			restrict: 'E',
+			scope: { },
+			link: function(scope, element, attributes) {
+			}
 		};
 	}
 
