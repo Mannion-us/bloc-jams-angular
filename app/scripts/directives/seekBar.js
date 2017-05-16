@@ -1,5 +1,5 @@
 (function() {
-	function seekBar() {
+	function seekBar($document) {
 		var calculatePercent = function(seekBar, event) {
 			var offsetX = event.pageX - seekBar.offset().left;
 			var seekBarWidth = seekBar.width();
@@ -41,5 +41,5 @@
 
 	angular
 		.module('blocJams')
-		.directive('seekBar', seekBar);
+		.directive('seekBar', ['$document', seekBar]);
 })();
