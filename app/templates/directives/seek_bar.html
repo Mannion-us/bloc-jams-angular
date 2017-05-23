@@ -2,16 +2,4 @@
 	<div class="fill" ng-style="fillStyle()"></div>
 	<div class="thumb" ng-style="thumbStyle()" ng-mousedown="trackThumb()"></div>
 </div>
-
-<!--
-By toggling the 'scope.$apply(function()' portion of the 'scope.trackThumb = function()' within the 'seekBar.js' directive file...the effect is a noticable ability to 'smoothly' transition the visual effect of 'clicking and dragging' the 'thumb' or 'pointer' on each of the two 'bars' within the 'view' of the angular application.  Without the 'scope.$apply()' functionality there is no real smooth transition that can be 'seen' in the 'view' of the user's experience of the application.  With this functionality, use of the 'click & drag' on the bars' 'thumb' image provides a smooth and noticable 'effect' within the 'view' of the application.
-
-				scope.trackThumb = function() {
-					$document.bind('mousemove.thumb', function(event) {
-						var percent = calculatePercent(seekBar, event);
-						scope.$apply(function() {
-							scope.value = percent * scope.max;
-						});
-					});
-This excerpt should now answer the 'assignment' portion of this checkpoint.
--->
+<!--git commit -m "angular-assignment-9-Directives-Part-1:  completed..."-->
