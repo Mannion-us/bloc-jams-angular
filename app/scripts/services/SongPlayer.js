@@ -64,6 +64,11 @@
 */
 		SongPlayer.currentSong = null;
 /**
+* @desc (Public) Current playback time (in seconds) of currently playing song
+* @type {Number}
+*/
+		SongPlayer.currentTime = null;
+/**
 * @function (Public) play
 * @desc Plays a 'song' (new or current)
 * @param {Object} song
