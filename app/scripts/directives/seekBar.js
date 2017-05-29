@@ -77,3 +77,20 @@
 		.module('blocJams')
 		.directive('seekBar', ['$document', seekBar]);
 })();
+
+/*
+These are the error messages produced from the code in it's current state:
+
+[Error] null is not an object (evaluating 'currentBuzzObject.isPaused')
+http://localhost:3000/scripts/services/SongPlayer.js:83
+	(anonymous function) (angular.min.js:95)
+	$apply (angular.min.js:149:449)
+	(anonymous function) (angular.min.js:285:469)
+	dispatch (jquery-3.2.1.min.js:3:10322)
+[Error] Can't find variable: notifyOnChange
+http://localhost:3000/scripts/directives/seekBar.js:51
+	(anonymous function) (angular.min.js:95)
+	$apply (angular.min.js:149:449)
+	(anonymous function) (angular.min.js:285:469)
+	dispatch (jquery-3.2.1.min.js:3:10322)
+*/
