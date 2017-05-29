@@ -1,5 +1,5 @@
 (function() {
-	function SongPlayer(Fixtures) {
+	function SongPlayer($rootScope, Fixtures) {
 
 /**
 * @desc (Public) Public name for SongPlayer object
@@ -135,5 +135,5 @@
 
 	angular
 		.module('blocJams')
-		.factory('SongPlayer', ['Fixtures', SongPlayer]);
+		.factory('SongPlayer', ['$rootScope', 'Fixtures', SongPlayer]);
 })();
