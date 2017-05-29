@@ -95,4 +95,4 @@ http://localhost:3000/scripts/directives/seekBar.js:51
 	dispatch (jquery-3.2.1.min.js:3:10322)
 */
 
-/*  git commit -m "angular-checkpoint-10-Directives-Part-2:  completed"  */
+/*  git checkout -b angular-assignment-10-Directives-Part-2  */
