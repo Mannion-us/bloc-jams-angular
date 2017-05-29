@@ -76,6 +76,11 @@
 */
 		SongPlayer.currentTime = null;
 /**
+* @desc (Public) Public name for 'volume' object attribute
+* @type {Number}
+*/
+		SongPlayer.volume = null;
+/**
 * @function (Public) play
 * @desc Plays a 'song' (new or current)
 * @param {Object} song
