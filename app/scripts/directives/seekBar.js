@@ -79,4 +79,3 @@
 		.module('blocJams')
 		.directive('seekBar', ['$document', seekBar]);
 })();
-/*  git commit -m "angular-assignment-10-Directives-Part-2:  completed..."  */
