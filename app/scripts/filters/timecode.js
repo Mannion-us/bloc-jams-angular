@@ -27,3 +27,4 @@
 		.module('blocJams')
 		.filter('timecode', timecode);
 })();
+//<!--git commit -m "angular-checkpoint-11-Filters:  completed"-->//
